@@ -1,4 +1,3 @@
-# record
-# record
-# record_1.2
 # record_1.3
+
+Aplikacija record služi za vođenje evidencije unosa/iznosa opreme 

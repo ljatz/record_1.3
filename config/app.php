@@ -1,6 +1,6 @@
 <?php
 
 return [
-	'name'		=> 'Naziv tvrtke',
+	'name'		=> '', // ime tvrtke
 	'debug'		=> true
 ];

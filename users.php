@@ -42,7 +42,7 @@ include_once 'core/init.php';
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#">Naziv tvrtke</a>					
+					<a class="navbar-brand" href="#">Kontrolna ploča</a>					
 				</div>
 				<ul class="nav navbar-nav navbar-left">
 					<li><a href="dashboard.php"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a></li>

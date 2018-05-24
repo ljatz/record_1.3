@@ -16,7 +16,7 @@
 		
 		$slug = $user->data()->slug; 
 		
-	Helper::getHeader('Naziv glavne lokacije', 'header', $user);
+	Helper::getHeader('Kontrolna ploča', 'header', $user);
 	
 ?>	
 		<nav class="navbar navbar-default navbar-fixed-top">
@@ -28,7 +28,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Naziv tvrtke</a>
+					<a class="navbar-brand" href="#">Kontrolna ploča</a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">

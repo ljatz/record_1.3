@@ -5,7 +5,7 @@ include_once 'core/init.php';
 	$user = new User();
 	
 	if(!$user->check()) {
-		Redirect::to('index');
+		Redirect::to('login');
 	}
 
 	$slug = $user->data()->slug;
@@ -13,8 +13,6 @@ include_once 'core/init.php';
 	$id = Input::page('id');
 	
 	$sql = 'SELECT * FROM objects WHERE id ='.$id;
-	
-	$match = DB::getInstance()->query('SELECT id FROM objects WHERE id = '.$id)->results();
 	
 	$test = DB::getInstance()->query($sql)->results();
 	
@@ -61,12 +59,7 @@ include_once 'core/init.php';
 					<li><a href="<?php echo 'unos.php?id='.$id; ?>">Upis</a></li>
 					<li class="active"><a href="#">Tablica</a></li>	
 					<li><a href="<?php echo 'pns.php?id='.$id; ?>">Pregled nerješenih stavki</a></li>
-					<li><a href="#" onclick="del()">Obriši objekt</a></li>
-						<script type="text/javascript">
-							function del() {
-								alert('da');
-							}
-						</script>
+					<li style="<?php if(!preg_match('/admin/i', $slug)) { echo 'display:none;';} ?>"><a href="<?php echo 'die.php?id='.$id; ?>">Obriši objekt</a></li>
 					<li class="navbar-form navbar-left">
 						<div class="form-group">
 							<input type="text" class="form-control" placeholder="Pretraži po inv. br." id="myInput" onkeyup="myFunction()">
